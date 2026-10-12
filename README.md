@@ -4,9 +4,9 @@ Website for mypsquared.com: a learning-profile and DBE home-education registrati
 Built with React, TypeScript, Vite, Tailwind and Supabase, using Lovable and AI coding tools.
 
 ## What it does
-- Learning-profile assessment for parents
+- Learner Blueprint: a learning-profile assessment that helps parents understand how their child learns
 - Step-by-step DBE home-education registration form and document package
-- Blog, FAQ and waitlist
+- Blog, FAQ and a waitlist to hear when Learner Blueprint launches
 
 ## Running locally
 npm install, copy .env.example to .env and fill your own values, then npm run dev.
