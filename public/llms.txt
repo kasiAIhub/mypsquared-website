@@ -1,0 +1,22 @@
+# P² (P-Squared)
+
+> Personalised learning for South African children. P² is building personalised daily lesson plans around how your child actually learns — aligned to their CAPS, IEB, Cambridge or DBE curriculum, to be delivered via WhatsApp. Parents can join the waitlist to be first in.
+
+P² is a South African personalised-learning service for parents whose children are in school or learning at home. Parents take a free 5-minute assessment that identifies their child's learning archetype, then receive curriculum recommendations and DBE registration support for homeschoolers. P² is building personalised daily lesson plans to be delivered via WhatsApp; parents can join the waitlist to be first in.
+
+## Pages
+
+- [Home](/): P² is building personalised daily lesson plans delivered via WhatsApp. Parents can join the waitlist to be first in, or start with the free assessment.
+- [About P²](/about): How P² started at a kitchen table and the South African families it was built for.
+- [For Homeschoolers](/for-homeschoolers): The Homeschool Readiness Guide, DBE registration support, and the first 7 days with My Learning Coach.
+- [For School Parents](/for-mainstream-parents): Personalised daily lesson plans for children already in mainstream school.
+- [Learner Blueprint](/learner-blueprint): The six dimensions P² uses to understand how each child learns.
+- [Curriculum Match](/learner-blueprint): Matching your child to CAPS, IEB, Cambridge, or DBE based on their learner profile.
+- [Free Assessment](/assessment): The 19-question Homeschool Readiness Guide for South African parents.
+- [DBE Registration](/dbe-registration): Department of Basic Education home-education registration package for all 9 provinces.
+- [My Learning Coach](/my-learning-coach): Daily WhatsApp coaching for homeschooling parents — first 7 days free with registration.
+- [Get Started](/waitlist): Begin your child's personalised daily lesson plans.
+
+## Optional
+
+- [Registration](/registration): Account registration for the daily lesson-plan service.

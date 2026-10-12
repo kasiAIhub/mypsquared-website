@@ -1,0 +1,7 @@
+project_id = "dzrymjjxtxrnadbssscb"
+
+[functions.generate-motivation-letter]
+verify_jwt = false
+
+[functions.yoco-webhook-handler]
+verify_jwt = false

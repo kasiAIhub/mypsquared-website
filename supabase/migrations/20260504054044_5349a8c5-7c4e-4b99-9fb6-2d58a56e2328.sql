@@ -1,0 +1,1 @@
+ALTER TABLE public.dbe_registrations ALTER COLUMN payment_amount SET DEFAULT 999.00;
