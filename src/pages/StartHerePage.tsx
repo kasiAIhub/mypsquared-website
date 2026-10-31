@@ -21,7 +21,7 @@ export default function StartHerePage() {
         <div className="max-w-xl mx-auto">
           <p className="uppercase font-bold mb-3 text-[#10B981] text-xs tracking-[0.18em]">mypsquared</p>
           <h1 className="text-3xl md:text-4xl font-bold mb-4 text-white">Start here</h1>
-          <p className="text-[#94A3B8] text-lg mb-10">This is how I'd do it, one step at a time.</p>
+          <p className="text-[#94A3B8] text-lg mb-10">New to homeschooling, or doing it for the first time? This is how I'd start, one step at a time.</p>
 
           <StartHereSteps />
 
