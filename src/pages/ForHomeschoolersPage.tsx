@@ -333,7 +333,7 @@ const CoachingDaySection = () => {
           className="inline-flex items-center justify-center gap-2 text-white font-bold rounded-lg hover:opacity-90 transition-opacity whitespace-nowrap"
           style={{ background: EMERALD, padding: "18px 32px", fontSize: 18 }}
         >
-          Join the Learner Blueprint Waitlist <ArrowRight className="w-5 h-5" />
+          Meet Teacher Alex <ArrowRight className="w-5 h-5" />
         </Link>
       </div>
     </section>
@@ -825,7 +825,7 @@ export default function ForHomeschoolersPage() {
               className="inline-flex items-center gap-2 font-bold rounded-lg transition-opacity hover:opacity-90"
               style={{ background: "#fff", color: EMERALD, padding: "16px 40px", fontSize: 18 }}
             >
-              Join the Learner Blueprint Waitlist <ArrowRight className="w-5 h-5" />
+              Meet Teacher Alex <ArrowRight className="w-5 h-5" />
             </Link>
           </div>
           <div className="text-white" style={{ fontSize: 13, opacity: 0.8, marginTop: 16 }}>
