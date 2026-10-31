@@ -202,7 +202,7 @@ const CurriculumSection = () => {
                 to="/waitlist"
                 className="inline-flex items-center gap-2 bg-emerald-500 hover:bg-emerald-400 transition text-white font-semibold text-base md:text-lg px-8 md:px-10 py-3.5 rounded-lg shadow-lg shadow-emerald-500/20"
               >
-                Join the Learner Blueprint Waitlist
+                Meet Teacher Alex
                 <ChevronRight className="w-5 h-5" strokeWidth={3} />
               </Link>
               <Link
