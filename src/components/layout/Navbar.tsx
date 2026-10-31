@@ -2,7 +2,7 @@ import { useEffect, useRef, useState } from "react";
 import { Link, useLocation } from "react-router-dom";
 import { Menu, X, ChevronDown } from "lucide-react";
 
-const WHATSAPP_URL = "https://api.whatsapp.com/send?phone=27818905861";
+const START_HERE_URL = "/start-here";
 
 const WhatsAppIcon = ({ size = 14 }: { size?: number }) => (
   <svg width={size} height={size} viewBox="0 0 24 24" fill="#25D366" aria-hidden="true">
@@ -141,10 +141,8 @@ export default function Navbar() {
             >
               Join the Waitlist
             </Link>
-            <a
-              href={WHATSAPP_URL}
-              target="_blank"
-              rel="noopener noreferrer"
+            <Link
+              to={START_HERE_URL}
               title="Chat with us on WhatsApp"
               aria-label="Chat with us on WhatsApp"
               className="ml-2 hidden md:flex items-center justify-center"
@@ -158,7 +156,7 @@ export default function Navbar() {
               }}
             >
               <WhatsAppIcon size={18} />
-            </a>
+            </Link>
           </div>
 
           <div className="flex items-center gap-3">
@@ -234,10 +232,9 @@ export default function Navbar() {
             >
               DBE Registration for Homeschooling
             </Link>
-            <a
-              href={WHATSAPP_URL}
-              target="_blank"
-              rel="noopener noreferrer"
+            <Link
+              to={START_HERE_URL}
+              onClick={() => setOpen(false)}
               className="flex items-center justify-center gap-2"
               style={{
                 width: "100%",
@@ -253,7 +250,7 @@ export default function Navbar() {
             >
               <WhatsAppIcon size={16} />
               Chat with us on WhatsApp
-            </a>
+            </Link>
           </div>
         )}
       </div>
