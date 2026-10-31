@@ -1,4 +1,3 @@
-import { Link } from "react-router-dom";
 import bg from "@/assets/mission-father-son.jpg";
 
 export default function MissionBanner() {
@@ -26,12 +25,12 @@ export default function MissionBanner() {
             A unique story. A unique future.<br />
             P² helps you discover it.
           </p>
-          <Link
-            to="/waitlist"
+          <a
+            href="/waitlist"
             className="mt-6 inline-flex items-center gap-2 bg-[#FBBF24] hover:bg-[#f5b011] text-[#0F172A] font-semibold px-6 py-3.5 rounded-md transition"
           >
-            Join the Learner Blueprint Waitlist <span aria-hidden>→</span>
-          </Link>
+            Meet Teacher Alex <span aria-hidden>→</span>
+          </a>
         </div>
 
         <div className="relative lg:pl-12">
