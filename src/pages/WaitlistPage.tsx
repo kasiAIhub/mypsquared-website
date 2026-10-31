@@ -3,6 +3,7 @@ import Navbar from "@/components/layout/Navbar";
 import Footer from "@/components/layout/Footer";
 import { supabase } from "@/integrations/supabase/client";
 import { usePageMeta } from "@/hooks/usePageMeta";
+import StartHereSteps from "@/components/StartHereSteps";
 
 const GRADES = ["Grade R", ...Array.from({ length: 12 }, (_, i) => `Grade ${i + 1}`)];
 const CURRICULA = ["CAPS", "IEB", "Cambridge", "Not sure"];
@@ -38,6 +39,12 @@ export default function WaitlistPage() {
             <div className="rounded-lg border border-[#10b981]/40 bg-[#10b981]/10 p-8">
               <h1 className="text-3xl font-bold mb-3">Thank you, you're on the list!</h1>
               <p className="text-white/80">We'll message you on WhatsApp the day it opens.</p>
+            </div>
+          ) : null}
+          {status === "done" ? (
+            <div className="mt-6 rounded-lg border border-white/15 bg-white/5 p-8">
+              <p className="font-semibold mb-6 text-white">While you wait, this is how I'd do it, one step at a time.</p>
+              <StartHereSteps />
             </div>
           ) : (
             <>
