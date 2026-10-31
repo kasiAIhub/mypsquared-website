@@ -1,9 +1,5 @@
 import { MessageCircle } from "lucide-react";
-import { DEFAULT_WHATSAPP_MESSAGE, getWhatsAppFallbackHref, openWhatsApp } from "@/lib/whatsapp";
-
-const WHATSAPP_URL =
-  "https://api.whatsapp.com/send?phone=27818905861&text=Hi%20P-Squared%2C%20I%20need%20help%20with%20homeschooling";
-const WHATSAPP_BARE = "https://api.whatsapp.com/send?phone=27818905861";
+import { Link } from "react-router-dom";
 
 const linkBase: React.CSSProperties = {
   color: "rgba(255,255,255,0.65)",
@@ -137,18 +133,10 @@ export default function Footer() {
               The child is the universal constant. Everything else bends to fit them.
             </p>
 
-            <a
-              href={getWhatsAppFallbackHref()}
-              className="psq-wa-btn"
-              style={{ marginTop: 20 }}
-              onClick={(e) => {
-                e.preventDefault();
-                openWhatsApp(DEFAULT_WHATSAPP_MESSAGE);
-              }}
-            >
+            <Link to="/start-here" className="psq-wa-btn" style={{ marginTop: 20 }}>
               <MessageCircle size={16} />
               Chat with us on WhatsApp
-            </a>
+            </Link>
 
             <p
               style={{
@@ -202,15 +190,7 @@ export default function Footer() {
           <div>
             <h4 style={headingStyle}>SUPPORT</h4>
             <nav style={{ display: "flex", flexDirection: "column" }}>
-              <FooterLink
-                href={getWhatsAppFallbackHref()}
-                onClick={(e) => {
-                  e.preventDefault();
-                  openWhatsApp(DEFAULT_WHATSAPP_MESSAGE);
-                }}
-              >
-                Chat on WhatsApp
-              </FooterLink>
+              <FooterLink href="/start-here">Chat on WhatsApp</FooterLink>
               <FooterLink href="/dbe-registration">DBE Registration Help</FooterLink>
             </nav>
             <div
