@@ -44,6 +44,20 @@ type Family = {
 
 const families: Family[] = [
   {
+    id: 1, name: 'The Dlamini Family', bg: '#1D4E3A', icon: '👩‍👧', image: family01,
+    problem: 'Solo parent. Full load.',
+    location: 'Tembisa · Single mother',
+    sentence: '"She goes to work at 6am. Her child\'s education cannot wait for a system that forgot to call her back."',
+    tag: 'Working parent',
+    headline: 'You are not doing this wrong. The system was not built for you.',
+    reality: "In Gauteng's highest-pressure areas, learner-educator ratios exceed 50:1 — more than three times the OECD average of 16:1. A teacher managing 50 children cannot see, support, or respond to any one of them individually. The working single mother who drops her child off at 7am and returns at 6pm has no control over what happens in between. She cannot attend meetings. She cannot chase teachers. She cannot monitor homework at 8pm after a 12-hour shift. The system was designed for a family structure that most South African families do not have.",
+    stat: 'Over 300,000 learners went unplaced at the start of the 2020 school year in Gauteng and the Western Cape alone. For a working parent with no time to navigate bureaucracy, an unplaced child means an unsupervised child.',
+    deeperContext: "University of Johannesburg research shows that learners in under-resourced schools arrive at high school already exhausted — carrying years of accumulated stress from overcrowded classrooms, under-resourced environments, and the invisible weight of their family's financial pressure. By the time these children reach Grade 10, many have already quietly given up. Of the 1.2 million children who started Grade 1 in 2013, fewer than 615,000 passed matric in 2024. The working single mother is not failing her child. A system that never accounted for her life is failing both of them.",
+    stat2: '1 in 2 children who started Grade 1 in 2013 did not pass matric in 2024. The real pass rate, when you count every child who started, is 50% — not the 87% the DBE reports.',
+    pSquared: "P-Squared's free learner assessment takes 5 minutes on your phone — no appointment, no school visit, no forms. It identifies your child's learning archetype from 20 possible profiles. The curriculum recommendation is immediate. The DBE registration package is generated for you — every document, every province-specific requirement, the motivational letter. You email it yourself from your own inbox. Legal, correct, done. The Learning Coach then walks you through the first 7 days at 7am every morning — so your child's education moves forward while you do.",
+    cta: "Meet Teacher Alex",
+  },
+  {
     id: 2, name: 'The Naidoo Family', bg: '#3B2A1A', icon: '👵🏽', image: family02,
     problem: 'Neurodivergent child.',
     location: 'Durban · Indian family',
@@ -55,7 +69,7 @@ const families: Family[] = [
     deeperContext: 'University of Johannesburg researchers studying teenagers in under-resourced Gauteng high schools describe a silent mental health crisis — chronic stress, anxiety, and a quiet hopelessness that sets in years before matric. For neurodivergent learners, this crisis begins earlier. They know they are different. They know the classroom does not work for them. What they do not know — and what no one is telling them — is that the classroom is the problem, not them. Adaptive learning platforms, which adjust pace, format, and content to the individual learner, have been shown to improve academic outcomes by as much as 62% for learners who struggle in standard classroom environments.',
     stat2: "Adaptive personalised learning environments show a 62% improvement in test scores compared to standard classroom delivery — because the platform moves at the learner's pace, not the group's.",
     pSquared: "P-Squared's learner assessment identifies your grandchild's specific learning archetype — The Observer, The Architect, The Inventor, The Caregiver, and 16 others. Each archetype comes with specific recommendations: how she learns best, what environments help her focus, what triggers disengagement, and what curriculum format matches who she is. The Learning Coach's Day 4 is built entirely around her archetype — so you know exactly how to support her, not just what to teach her. You stop guessing. You start knowing.",
-    cta: "Join the Learner Blueprint Waitlist",
+    cta: "Meet Teacher Alex",
   },
   {
     id: 3, name: 'The Van der Berg Family', bg: '#2C1F0E', icon: '👨‍👦', image: family03,
@@ -69,7 +83,7 @@ const families: Family[] = [
     deeperContext: 'The Pestalozzi Trust\'s 2025 national survey of DBE homeschool registration outcomes revealed that in rural provinces — Limpopo, Eastern Cape, North West — application approval rates are among the lowest in the country. Applications disappear into provincial systems. Families wait months for responses that never arrive. The "deemed registered" protection exists on paper but carries no certificate, no formal acknowledgment, and no legal clarity for university admissions. Rural families carry the highest administrative burden with the least institutional support. Online education removes the geography. A child in the Karoo with a laptop and a curriculum can access Cambridge International content, live teacher check-ins, and a personalised learning plan — the same as a child in Sandton.',
     stat2: "Impaq Education's CAPS-aligned Afrikaans curriculum starts from R5,000 per year. CambriLearn's Cambridge pathway starts from R15,000. Either option is a fraction of what transport, uniforms, and school fees cost a rural family annually — with better academic outcomes and no commute.",
     pSquared: "P-Squared matches your child to the right curriculum — CAPS in Afrikaans if that is your language, Cambridge if you want an internationally recognised pathway, IEB if you want South African rigour with more flexibility. The DBE registration package is generated for your specific province, with the correct forms, the correct motivational letter, and the correct supporting documents. You submit it from your own email. P-Squared stores the record. The Learning Coach delivers your daily guide at 7am via WhatsApp — no data-heavy apps, no login required. Just the next clear step, every morning.",
-    cta: "Join the Learner Blueprint Waitlist",
+    cta: "Meet Teacher Alex",
   },
   {
     id: 4, name: 'The Adams Family', bg: '#1A1A2E', icon: '👨‍👦🏽', image: family04,
@@ -83,7 +97,7 @@ const families: Family[] = [
     deeperContext: 'University of Johannesburg research into schools in Gauteng\'s industrial corridor describes learners who arrive at high school already "tired and exhausted" — not from academic work, but from the accumulated stress of unsafe environments. Children who are bullied do not simply suffer socially. Their cortisol levels remain elevated. Their working memory is impaired. Their ability to learn, retain, and recall information is directly compromised by the chronic stress response that bullying triggers. The child who was bullied is not falling behind because they are less capable. They are falling behind because their nervous system has been in survival mode for months or years. A safe learning environment is not a luxury. It is a precondition for learning.',
     stat2: 'Chronic stress from unsafe school environments impairs working memory, reduces attention span, and disrupts the neural pathways required for learning. Removing a child from the source of stress is not overreacting. It is the evidence-based response.',
     pSquared: "P-Squared builds the alternative. A curriculum matched to your son's learning profile — not the class average. A safe, consistent learning space at home where his nervous system can regulate and his brain can actually function. Legal DBE registration so his academic record remains intact and uninterrupted — no gap year, no starting over. The Learning Coach walks you through setting up the physical learning space on Day 1, the daily rhythm on Day 3, and the social plan — extramurals, sports clubs, community connections — on Day 6. Your child does not have to choose between safety and education. P-Squared makes both possible.",
-    cta: "Join the Learner Blueprint Waitlist",
+    cta: "Meet Teacher Alex",
   },
   {
     id: 5, name: 'The Mokoena Family', bg: '#1A2E1A', icon: '👨‍👩‍👧🏿', image: family05,
@@ -97,7 +111,7 @@ const families: Family[] = [
     deeperContext: "The online education market in South Africa has matured significantly since 2020. Providers like CambriLearn, UCT Online High School, Impaq, and Think Digital Academy offer structured daily lessons, live teacher interaction, SACAI-accredited assessment, and internationally recognised qualifications. CambriLearn learners write the same Cambridge International examinations as students in the UK, Singapore, and Kenya. UCT Online is backed by one of Africa's leading universities. The quality gap between online and private school — once significant — has closed. What online education offers that private school cannot is genuine personalisation: your child's pace, your child's archetype, your child's path.",
     stat2: 'Of the 1.2 million children who started Grade 1 in 2013, fewer than 15% are projected to enrol at university. Private school fees do not guarantee university entry. The right curriculum match, at the right pace, for the right learner does.',
     pSquared: "P-Squared identifies whether CAPS, IEB, or Cambridge is the right pathway for your daughter — based on her learning profile, not the school's marketing. The recommendation is free. The DBE registration is done for you. The curriculum is matched to who she is. And the Learning Coach walks you through the first week so you know how to facilitate her learning without becoming a full-time teacher. You are not the teacher. The online school is. You are the facilitator, the manager, the advocate. P-Squared shows you exactly how to do that.",
-    cta: "Join the Learner Blueprint Waitlist",
+    cta: "Meet Teacher Alex",
   },
   {
     id: 6, name: 'The Moyo Family', bg: '#1F1A2E', icon: '👩‍👦🏽', image: family06,
@@ -111,7 +125,7 @@ const families: Family[] = [
     deeperContext: 'The BELA Act of 2024 introduced new registration requirements for home education — but the administrative infrastructure to process these applications has not kept pace with the legislation. Families are caught in what the Pestalozzi Trust calls "deemed registered" limbo — technically protected from prosecution while their applications are pending, but without the formal certificate that universities, immigration officials, and future employers require. For immigrant families navigating this system in a second or third language, without local networks or institutional knowledge, the risk of making an error that costs their child\'s academic record is real.',
     stat2: '"Deemed registered" status protects a homeschooling family legally — but it does not produce a certificate. Without a formal DBE approval letter, university applications, scholarship assessments, and institutional enrolments can be challenged or rejected.',
     pSquared: "P-Squared generates your complete DBE registration package in plain, accessible language. Every document. Every form. A motivational letter that accurately reflects your family's situation — including your immigration status, your child's previous academic history, and your chosen curriculum. You submit the package yourself from your own email address — which is the legally required method. P-Squared stores the record and supports you through any follow-up correspondence with the provincial DBE office. You do not navigate this alone.",
-    cta: "Join the Learner Blueprint Waitlist",
+    cta: "Meet Teacher Alex",
   },
   {
     id: 7, name: 'The Erasmus Family', bg: '#1A2030', icon: '👩‍👦🏻', image: family07,
@@ -125,7 +139,7 @@ const families: Family[] = [
     deeperContext: "Post-COVID research globally shows a consistent pattern: children with pre-existing anxiety, sensory sensitivities, or social communication differences thrived during home-based learning and deteriorated when returned to institutional settings. This is not a reflection of the child's academic capability. It is a reflection of environmental fit. The school was not designed for them. Home — with the right structure, the right curriculum, and the right daily rhythm — was. Adaptive learning platforms that allow a child to pause, rewind, revisit, and move forward at their own pace have shown a 62% improvement in outcomes for learners who struggled in standard classroom settings. The environment was always the variable.",
     stat2: "62% improvement in academic outcomes has been documented in learners using adaptive personalised learning platforms — because the platform adjusts to the learner's pace, not the class average. For anxious learners, removing the social pressure of performing in front of peers is equally significant.",
     pSquared: "P-Squared identifies your son's learning archetype — whether he is an Observer who needs time to process before responding, an Architect who needs depth before breadth, or an Explorer who needs novelty to stay engaged. This archetype shapes every curriculum recommendation, every daily structure, every provider match. The Learning Coach's Day 3 builds a daily rhythm with breathing room built in — 3 hours of focused learning, not 7 hours of institutional performance. By Day 7, most parents report that their child is more engaged, more confident, and more academically productive than they had been in months of traditional schooling.",
-    cta: "Join the Learner Blueprint Waitlist",
+    cta: "Meet Teacher Alex",
   },
   {
     id: 8, name: 'The Williams-Jacobs Family', bg: '#2A1A20', icon: '👨‍👩‍👧‍👦', image: family08,
@@ -139,7 +153,7 @@ const families: Family[] = [
     deeperContext: 'Research on blended families and educational outcomes consistently shows that transitions — new household structure, new school, new peer group, new routines — are among the highest-risk periods for academic disengagement. Children need consistency, predictability, and felt safety in order to learn effectively. A home-based learning environment, structured around each child\'s individual profile and anchored by a consistent daily rhythm, provides the stability that institutional schooling — with its fixed terms, changing teachers, and social complexity — frequently cannot. The family that homeschools multiple children is not taking on more than a school could manage. It is taking on something a school was never designed to do: see each child individually.',
     stat2: 'Homeschool co-operatives — where families share facilitation responsibilities, run group projects, and organise structured social time — are growing rapidly across South Africa. Children in these environments get the social breadth of traditional schooling with the academic depth of personalised learning.',
     pSquared: "P-Squared runs the free learner assessment for each child — separately, individually, with separate recommendations. Your eldest might be matched to Cambridge for its academic rigour. Your middle child to CAPS for its structured familiarity. Your youngest to an adaptive platform that adjusts daily. The Learning Coach delivers a daily guide personalised to each child's archetype. The DBE registration covers each child with the correct provincial documentation. One platform, three individual children, three individual plans.",
-    cta: "Join the Learner Blueprint Waitlist",
+    cta: "Meet Teacher Alex",
   },
   {
     id: 9, name: 'The Pretorius Family', bg: '#1A1E2A', icon: '👩‍👧‍👦🏻', image: family09,
@@ -153,7 +167,7 @@ const families: Family[] = [
     deeperContext: 'Section 13 of the South African Schools Act explicitly protects a parent\'s right to educate their child according to their own religious and philosophical convictions — provided the child receives an adequate education. The BELA Act of 2024 introduced new registration requirements for home education but did not remove or diminish this protection. What changed is the administrative requirement: families must now formally register with the DBE and submit an annual progress report. The freedom to integrate faith, language, and values into daily learning is legally intact. What P-Squared does is ensure the paperwork reflects that freedom correctly — so it cannot be challenged.',
     stat2: "Gauteng's DBE homeschool application approval rate is 40.37% — meaning that even compliant, well-documented applications face a significant chance of silence or rejection. The difference between an approved application and a rejected one frequently comes down to the motivational letter. P-Squared's package includes a motivational letter written specifically for your family's values and circumstances.",
     pSquared: "P-Squared matches your family to the provider that aligns with your language, your values, and your academic goals — not the most prestigious option, the right one. Impaq's Afrikaans CAPS curriculum is available from Grade R to Grade 12. The DBE registration package is generated with the correct provincial forms, the correct supporting documents, and a motivational letter that accurately represents your family's educational philosophy. Legal. Correct. Yours. The Learning Coach walks you through setting up a daily rhythm that integrates your family's values from the first morning.",
-    cta: "Join the Learner Blueprint Waitlist",
+    cta: "Meet Teacher Alex",
   },
   {
     id: 10, name: 'The Chen Family', bg: '#1A2A2A', icon: '👩‍👧🏻', image: family10,
@@ -167,7 +181,7 @@ const families: Family[] = [
     deeperContext: 'Underachievement in gifted learners is one of the most documented phenomena in educational psychology — and one of the most preventable. Gifted children who are not challenged become bored. Bored children disengage. Disengaged children underperform. Their teachers, who are measuring performance against grade-level standards, often miss the root cause entirely. The child who finishes every worksheet in ten minutes and then disrupts the class is not a behaviour problem. She is a containment problem — contained by a curriculum that was never designed for her. Adaptive learning platforms that allow a child to progress at her actual pace — not the grade\'s pace — consistently show dramatic improvements in engagement, motivation, and achievement for advanced learners.',
     stat2: 'Research on acceleration — allowing gifted learners to progress through curriculum at their own pace — shows significant long-term benefits: higher academic achievement, greater career satisfaction, and stronger sense of personal identity. The fear that acceleration damages social development is not supported by evidence when acceleration is paired with strong social structures.',
     pSquared: "P-Squared's learner assessment identifies your daughter's archetype — The Scientist, The Engineer, The Inventor, The Philosopher — and maps her to the curriculum that has no ceiling. Cambridge International, available through CambriLearn or Think Digital Academy, allows her to progress through each subject at her demonstrated pace. The DBE registration ensures her academic record is legally recognised regardless of how far ahead she progresses. The Learning Coach's Day 4 uses her specific archetype to give you tools for when she finishes early, goes deep on something unexpected, or needs a challenge that goes beyond the curriculum. You do not slow her down. You learn how to keep up.",
-    cta: "Join the Learner Blueprint Waitlist",
+    cta: "Meet Teacher Alex",
   },
 ];
 
