@@ -20,6 +20,7 @@ const entries: SitemapEntry[] = [
   { path: "/learner-blueprint", changefreq: "monthly", priority: "0.8" },
   { path: "/assessment", changefreq: "monthly", priority: "0.8" },
   { path: "/start", changefreq: "monthly", priority: "0.8" },
+  { path: "/start-here", changefreq: "monthly", priority: "0.6" },
   { path: "/dbe-registration", changefreq: "monthly", priority: "0.8" },
   { path: "/registration", changefreq: "monthly", priority: "0.7" },
   { path: "/my-learning-coach", changefreq: "monthly", priority: "0.7" },
