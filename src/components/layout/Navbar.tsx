@@ -139,7 +139,7 @@ export default function Navbar() {
               className="ml-2 hidden lg:inline-flex items-center justify-center bg-[#10b981] hover:brightness-110 text-white font-semibold rounded-md transition"
               style={{ padding: "8px 16px", fontSize: 13 }}
             >
-              Join the Waitlist
+              Meet Teacher Alex
             </Link>
             <Link
               to={START_HERE_URL}
@@ -223,7 +223,7 @@ export default function Navbar() {
               onClick={() => setOpen(false)}
               className="md:hidden mt-3 bg-[#10b981] text-white text-center font-semibold px-5 py-3 rounded-md"
             >
-              Join the Waitlist
+              Meet Teacher Alex
             </Link>
             <Link
               to="/dbe-registration"
