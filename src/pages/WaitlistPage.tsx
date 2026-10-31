@@ -3,9 +3,8 @@ import Navbar from "@/components/layout/Navbar";
 import Footer from "@/components/layout/Footer";
 import { supabase } from "@/integrations/supabase/client";
 import { usePageMeta } from "@/hooks/usePageMeta";
-import StartHereSteps from "@/components/StartHereSteps";
 
-const GRADES = ["Grade R", ...Array.from({ length: 12 }, (_, i) => `Grade ${i + 1}`)];
+const GRADES = ["Grade 4", "Grade 5", "Grade 6", "Grade 7"];
 const CURRICULA = ["CAPS", "IEB", "Cambridge", "Not sure"];
 
 const field =
@@ -13,8 +12,8 @@ const field =
 
 export default function WaitlistPage() {
   usePageMeta({
-    title: "Learner Blueprint Waitlist | P²",
-    description: "Join the waitlist for Learner Blueprint daily lesson plans, built around how your child learns.",
+    title: "Meet Teacher Alex | P²",
+    description: "Tell us about your child and we'll get you started with Teacher Alex, built around how your child learns.",
   });
   const [form, setForm] = useState({ grade: "", curriculum: "", parentName: "", whatsappNumber: "" });
   const [status, setStatus] = useState<"idle" | "sending" | "done" | "error">("idle");
@@ -37,20 +36,26 @@ export default function WaitlistPage() {
           <p className="uppercase font-bold mb-3 text-[#10b981] text-xs tracking-[0.18em]">Learner Blueprint</p>
           {status === "done" ? (
             <div className="rounded-lg border border-[#10b981]/40 bg-[#10b981]/10 p-8">
-              <h1 className="text-3xl font-bold mb-3">Thank you, you're on the list!</h1>
-              <p className="text-white/80">We'll message you on WhatsApp the day it opens.</p>
-            </div>
-          ) : null}
-          {status === "done" ? (
-            <div className="mt-6 rounded-lg border border-white/15 bg-white/5 p-8">
-              <p className="font-semibold mb-6 text-white">While you wait, this is how I'd do it, one step at a time.</p>
-              <StartHereSteps />
+              <h1 className="text-3xl font-bold mb-3">{form.grade === "Grade 4" ? "Thank you!" : "Thank you, you're on the list!"}</h1>
+              {form.grade === "Grade 4" ? (
+                <>
+                  <p className="text-white/80 mb-6">Teacher Alex, your child's exam preparation buddy, is ready for Grade 4. Start now:</p>
+                  <a
+                    href="https://alex.mypsquared.com"
+                    className="block w-full text-center rounded-md bg-[#10b981] hover:bg-[#0ea371] font-semibold py-4 text-lg text-white"
+                  >
+                    Start Teacher Alex →
+                  </a>
+                </>
+              ) : (
+                <p className="text-white/80">We're building {form.grade} now. We'll message you on WhatsApp when it's ready.</p>
+              )}
             </div>
           ) : (
             <>
-              <h1 className="text-3xl md:text-4xl font-bold mb-3">Join the waitlist</h1>
+              <h1 className="text-3xl md:text-4xl font-bold mb-3">Meet Teacher Alex</h1>
               <p className="text-white/75 mb-8">
-                Daily lesson plans built around how your child learns. Leave your details and we'll let you know when it opens.
+                Tell us about your child and we'll get you started.
               </p>
               <form onSubmit={submit} className="space-y-4">
                 <label className="block">
@@ -83,10 +88,10 @@ export default function WaitlistPage() {
                   disabled={status === "sending"}
                   className="w-full rounded-md bg-[#10b981] hover:bg-[#0ea371] font-semibold py-3 disabled:opacity-60"
                 >
-                  {status === "sending" ? "Joining…" : "Join the waitlist"}
+                  {status === "sending" ? "Sending…" : "Get started"}
                 </button>
                 <p className="text-xs text-white/55 text-center">
-                  We only use these details to contact you about the Learner Blueprint waitlist and never share them (POPIA).
+                  We only use these details to contact you about Teacher Alex and never share them (POPIA).
                 </p>
               </form>
             </>
