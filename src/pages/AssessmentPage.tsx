@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 import Navbar from '../components/layout/Navbar';
 import LearningProfileAssessment from '../components/assessment/LearningProfileAssessment';
 import Footer from '../components/layout/Footer';
+import StartHereSteps from '../components/StartHereSteps';
 
 export default function AssessmentPage() {
   const [showResults, setShowResults] = useState(false);
@@ -75,6 +76,15 @@ export default function AssessmentPage() {
             <p className="mt-4 text-center" style={{ fontSize: 13, color: '#64748B' }}>
               Join the waitlist - we open soon
             </p>
+            <div
+              className="mt-10 text-left rounded-xl"
+              style={{ background: '#0F172A', padding: '32px 28px' }}
+            >
+              <p style={{ color: '#F5F0E8', fontWeight: 600, marginTop: 0, marginBottom: 24 }}>
+                Not sure what comes next? This is how I'd do it, one step at a time.
+              </p>
+              <StartHereSteps />
+            </div>
           </div>
         )}
       </div>
