@@ -10,6 +10,7 @@ import { ProtectedRoute } from "@/components/admin/ProtectedRoute";
 import Home from "./pages/Index";
 import AssessmentPage from "./pages/AssessmentPage";
 import StartPage from "./pages/StartPage";
+import StartHerePage from "./pages/StartHerePage";
 import CurriculumPage from "./pages/CurriculumPage";
 import RegistrationPage from "./pages/RegistrationPage";
 import MyHomeschoolingCoachPage from "./pages/MyHomeschoolingCoachPage";
@@ -38,6 +39,7 @@ export const AppRoutes = () => (
             <Route path="/" element={<Home />} />
             <Route path="/assessment" element={<AssessmentPage />} />
             <Route path="/start" element={<StartPage />} />
+            <Route path="/start-here" element={<StartHerePage />} />
             <Route path="/curriculum" element={<Navigate to="/learner-blueprint" replace />} />
             <Route path="/registration" element={<RegistrationPage />} />
             <Route path="/my-learning-coach" element={<MyHomeschoolingCoachPage />} />
