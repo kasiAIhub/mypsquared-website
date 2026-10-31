@@ -22,13 +22,13 @@ globalThis.localStorage = mem();
 globalThis.sessionStorage = mem();
 
 const PAGE_META = {
-  "/": ["P² — Personalised Learning for South African Children", "Personalised daily lesson plans built around how your child learns. CAPS, IEB and Cambridge aligned. Join the waitlist - we open soon."],
+  "/": ["P² — Personalised Learning for South African Children", "Personalised daily lesson plans built around how your child learns. CAPS, IEB and Cambridge aligned. Grade 4 parents can meet Teacher Alex now."],
   "/about": ["About P² — Built by a South African Mother", "P² started at a kitchen table, built by a South African mother for families the school system was never designed for. Read our story."],
   "/for-homeschoolers": ["Homeschooling in South Africa — Start With P²", "Starting to homeschool? Understand your child, choose the right curriculum and get DBE registered with the P² Homeschool Readiness Guide."],
   "/for-mainstream-parents": ["Help Your School Child Learn Better — P²", "Your child is in school but struggling or bored? P² shows how they learn and gives personalised study support aligned to their curriculum."],
   "/learner-blueprint": ["Learner Blueprint — How Your Child Learns | P²", "Discover how your child thinks, learns and grows, match them to the right curriculum and build their learning around who they are."],
   "/assessment": ["Free Homeschool Readiness Assessment | P²", "Take the free P² assessment to see if homeschooling suits your family and get a personalised learning profile for your child."],
-  "/start": ["Your Child's Daily Lesson Plans — P²", "Personalised daily lesson plans for your child, aligned to CAPS, IEB or Cambridge and sent to WhatsApp. First 7 days free."],
+  "/start": ["Your Child's Daily Lesson Plans — P²", "Personalised daily lesson plans for your child, aligned to CAPS, IEB or Cambridge and sent to WhatsApp."],
   "/start-here": ["Start Here — mypsquared", "New to homeschooling? Start with the free readiness check, then your DBE registration, and Teacher Alex for children in Grade 4 and up."],
   "/dbe-registration": ["DBE Home Education Registration Help | P²", "Register your child for home education with the DBE. P² prepares your forms, learning plan and motivational letter, done for you."],
   "/registration": ["DBE Homeschool Registration Package — R999 | P²", "Everything you need for DBE home education approval: personalised, professional documents for a once-off R999."],
