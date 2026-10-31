@@ -837,14 +837,9 @@ export default function ForHomeschoolersPage() {
               <MessageCircleMore className="w-5 h-5" />
               <span className="font-semibold">Prefer WhatsApp?</span>
             </div>
-            <a
-              href="https://api.whatsapp.com/send?phone=27818905861"
-              target="_blank"
-              rel="noreferrer"
-              className="underline"
-            >
+            <Link to="/start-here" className="underline">
               Chat to us directly
-            </a>
+            </Link>
           </div>
         </div>
       </section>
