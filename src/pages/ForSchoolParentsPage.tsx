@@ -27,8 +27,8 @@ const GRAY = "#374151";
 const featureItems = [
   "Built around what your child loves",
   "Aligned to their existing school curriculum",
-  "Will be sent to your WhatsApp once the waitlist opens",
-  "Join the waitlist - we open soon",
+  "Will be sent to your WhatsApp when we open",
+  "Grade 4: start Teacher Alex now",
 ];
 
 const proofImages = [
@@ -61,7 +61,7 @@ const journeySteps = [
     number: 2,
     label: "Receive their world",
     description: "7 days of personalised digital books delivered via WhatsApp.",
-    badge: "WAITLIST",
+    badge: "COMING SOON",
     circleBg: EMERALD,
     badgeBg: EMERALD,
     badgeColor: "#ffffff",
@@ -69,7 +69,7 @@ const journeySteps = [
   {
     number: 3,
     label: "Continue their journey",
-    description: "New books will be sent once the waitlist opens. Their world keeps growing.",
+    description: "New books will be sent when we open. Their world keeps growing.",
     badge: "R500/month",
     circleBg: NAVY,
     badgeBg: NAVY,
@@ -140,14 +140,14 @@ export default function ForSchoolParentsPage() {
                   className="inline-flex items-center gap-2 rounded-lg font-bold text-white transition hover:brightness-110"
                   style={{ background: EMERALD, padding: "14px 28px", fontSize: 18 }}
                 >
-                  Join the Learner Blueprint Waitlist <ArrowRight className="w-5 h-5" />
+                  Meet Teacher Alex <ArrowRight className="w-5 h-5" />
                 </Link>
               </div>
               <p
                 className="mt-4"
                 style={{ fontSize: 12, color: "rgba(255,255,255,0.4)", lineHeight: 1.8 }}
               >
-                ✓ Join the waitlist - we open soon &nbsp;·&nbsp; ✓ Built around your child &nbsp;·&nbsp; ✓ Delivered via WhatsApp &nbsp;·&nbsp; ✓ No qualifications needed
+                ✓ Grade 4: start Teacher Alex now &nbsp;·&nbsp; ✓ Built around your child &nbsp;·&nbsp; ✓ Delivered via WhatsApp &nbsp;·&nbsp; ✓ No qualifications needed
               </p>
             </div>
 
@@ -332,10 +332,10 @@ export default function ForSchoolParentsPage() {
             className="mt-6 inline-flex items-center gap-2 rounded-lg font-bold text-white transition hover:brightness-110"
             style={{ background: EMERALD, padding: "16px 40px", fontSize: 17 }}
           >
-            Join the Learner Blueprint Waitlist <ArrowRight className="w-5 h-5" />
+            Meet Teacher Alex <ArrowRight className="w-5 h-5" />
           </Link>
           <p className="mt-3" style={{ color: CREAM, fontSize: 13, opacity: 0.5 }}>
-            Join the waitlist - we open soon
+            Grade 4 parents can meet Teacher Alex now.
           </p>
         </div>
       </section>
