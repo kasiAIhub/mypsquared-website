@@ -29,8 +29,17 @@ const Hero = () => {
         .psq-home-hero .psq-hero-btn-outline { background: transparent; color: ${CREAM}; border: 2px solid ${EMERALD}; }
         .psq-home-hero .psq-hero-btn-outline:hover { background: ${EMERALD}; color: ${NAVY}; }
 
+        @media (max-width: 767px) {
+          .psq-home-hero .psq-phone-dbe-secondary {
+            background: transparent !important;
+            color: ${CREAM} !important;
+            border: 2px solid ${EMERALD} !important;
+          }
+          .psq-home-hero .psq-phone-dbe-secondary:hover {
+            background: rgba(16,185,129,0.1) !important;
+          }
+        }
       `}</style>
-
 
       <div className="psq-hero-overlay" aria-hidden="true" />
       <div className="psq-phone-image-extension" aria-hidden="true">
@@ -38,15 +47,17 @@ const Hero = () => {
       </div>
       <div className="psq-phone-hero-content">
         <h1>
-          Daily lesson plans<br />
-          built around your child.<br />
+          Daily lesson plans
+          <br />
+          built around your child.
+          <br />
           <span>Sent straight to your WhatsApp.</span>
         </h1>
         <div className="psq-phone-hero-buttons">
           <Button asChild className="psq-phone-teal-button">
-            <Link to="/waitlist">Join the Waitlist for Daily Lesson Plans →</Link>
+            <a href="/waitlist">Meet Teacher Alex, your exam preparation buddy →</a>
           </Button>
-          <Button asChild className="psq-phone-teal-button">
+          <Button asChild className="psq-phone-teal-button psq-phone-dbe-secondary">
             <Link to="/dbe-registration">Start Your DBE Registration →</Link>
           </Button>
           <Button asChild className="psq-phone-guide-button">
@@ -54,9 +65,15 @@ const Hero = () => {
           </Button>
         </div>
         <ul>
-          <li><span aria-hidden="true">✓</span> Built around who your child actually is</li>
-          <li><span aria-hidden="true">✓</span> Fresh daily plan on WhatsApp</li>
-          <li><span aria-hidden="true">✓</span> Waitlist opens soon</li>
+          <li>
+            <span aria-hidden="true">✓</span> Built around who your child actually is
+          </li>
+          <li>
+            <span aria-hidden="true">✓</span> Fresh daily plan on WhatsApp
+          </li>
+          <li>
+            <span aria-hidden="true">✓</span> Grade 4: start Teacher Alex now
+          </li>
         </ul>
       </div>
 
@@ -83,7 +100,6 @@ const Hero = () => {
               marginBottom: 20,
             }}
           >
-
             Every Child Is Unique.
             <br />
             <span style={{ color: EMERALD }}>Their Learning Journey</span>
@@ -100,12 +116,14 @@ const Hero = () => {
               marginBottom: 32,
             }}
           >
-            Whether your child is in school or learning at home, P² is building a personalised daily lesson plan around who they are, matched to their curriculum and sent to your WhatsApp. Join the waitlist to be first in. Homeschooling parents: start with the free Homeschool Readiness Guide to find your path first.
+            Whether your child is in school or learning at home, P² is building a personalised daily lesson plan around
+            who they are, matched to their curriculum and sent to your WhatsApp. Grade 4 parents can meet Teacher Alex now.
+            Homeschooling parents: start with the free Homeschool Readiness Guide to find your path first.
           </p>
 
           <div className="psq-hero-ctas" style={{ display: "flex", flexDirection: "row", gap: 16, flexWrap: "wrap" }}>
-            <Link
-              to="/waitlist"
+            <a
+              href="/waitlist"
               className="psq-hero-btn-primary"
               style={{
                 display: "inline-flex",
@@ -120,8 +138,8 @@ const Hero = () => {
                 flex: "1 1 auto",
               }}
             >
-              Join the Learner Blueprint Waitlist →
-            </Link>
+              Meet Teacher Alex, your exam preparation buddy →
+            </a>
             <Link
               to="/dbe-registration"
               className="psq-hero-btn-dbe"
@@ -173,9 +191,15 @@ const Hero = () => {
               color: "#CBD5E1",
             }}
           >
-            <span><span style={{ color: EMERALD, fontWeight: 700 }}>✓</span> Built around your child</span>
-            <span><span style={{ color: EMERALD, fontWeight: 700 }}>✓</span> Daily lesson plans on WhatsApp</span>
-            <span><span style={{ color: EMERALD, fontWeight: 700 }}>✓</span> Join the waitlist - we open soon</span>
+            <span>
+              <span style={{ color: EMERALD, fontWeight: 700 }}>✓</span> Built around your child
+            </span>
+            <span>
+              <span style={{ color: EMERALD, fontWeight: 700 }}>✓</span> Daily lesson plans on WhatsApp
+            </span>
+            <span>
+              <span style={{ color: EMERALD, fontWeight: 700 }}>✓</span> Grade 4: start Teacher Alex now
+            </span>
           </div>
         </div>
       </div>
