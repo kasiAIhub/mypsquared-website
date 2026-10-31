@@ -71,10 +71,10 @@ export default function AssessmentPage() {
               className="block w-full sm:inline-block bg-[#10B981] hover:bg-[#059669] text-white font-semibold rounded-lg transition"
               style={{ padding: '16px 32px', fontSize: 18 }}
             >
-              Join the Learner Blueprint Waitlist
+              Meet Teacher Alex
             </Link>
             <p className="mt-4 text-center" style={{ fontSize: 13, color: '#64748B' }}>
-              Join the waitlist - we open soon
+              Grade 4 parents can meet Teacher Alex now.
             </p>
             <div
               className="mt-10 text-left rounded-xl"
