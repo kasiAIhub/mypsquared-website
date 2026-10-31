@@ -5,7 +5,6 @@ import { supabase } from "@/integrations/supabase/client";
 import { usePageMeta } from "@/hooks/usePageMeta";
 
 const GRADES = ["Grade 4", "Grade 5", "Grade 6", "Grade 7"];
-const CURRICULA = ["CAPS", "IEB", "Cambridge", "Not sure"];
 
 const field =
   "w-full rounded-md bg-white/5 border border-white/15 px-4 py-3 text-white placeholder:text-white/40 focus:outline-none focus:border-[#10b981]";
@@ -15,7 +14,7 @@ export default function WaitlistPage() {
     title: "Meet Teacher Alex | P²",
     description: "Tell us about your child and we'll get you started with Teacher Alex, built around how your child learns.",
   });
-  const [form, setForm] = useState({ grade: "", curriculum: "", parentName: "", whatsappNumber: "" });
+  const [form, setForm] = useState({ grade: "", parentName: "", whatsappNumber: "" });
   const [status, setStatus] = useState<"idle" | "sending" | "done" | "error">("idle");
 
   const set = (k: keyof typeof form) => (e: React.ChangeEvent<HTMLInputElement | HTMLSelectElement>) =>
@@ -24,7 +23,7 @@ export default function WaitlistPage() {
   const submit = async (e: React.FormEvent) => {
     e.preventDefault();
     setStatus("sending");
-    const { error } = await supabase.functions.invoke("submit-learner-waitlist", { body: form });
+    const { error } = await supabase.functions.invoke("submit-learner-waitlist", { body: { ...form, curriculum: "Not sure" } });
     setStatus(error ? "error" : "done");
   };
 
@@ -65,13 +64,7 @@ export default function WaitlistPage() {
                     {GRADES.map((g) => <option key={g} className="text-black">{g}</option>)}
                   </select>
                 </label>
-                <label className="block">
-                  <span className="block text-sm mb-1 text-white/80">Curriculum</span>
-                  <select required value={form.curriculum} onChange={set("curriculum")} className={field}>
-                    <option value="" disabled className="text-black">Select a curriculum</option>
-                    {CURRICULA.map((c) => <option key={c} className="text-black">{c}</option>)}
-                  </select>
-                </label>
+                
                 <label className="block">
                   <span className="block text-sm mb-1 text-white/80">Parent's name</span>
                   <input required maxLength={100} value={form.parentName} onChange={set("parentName")} className={field} />
