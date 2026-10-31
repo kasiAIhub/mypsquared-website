@@ -53,8 +53,11 @@ export default function WaitlistPage() {
           ) : (
             <>
               <h1 className="text-3xl md:text-4xl font-bold mb-3">Meet Teacher Alex</h1>
-              <p className="text-white/75 mb-8">
+              <p className="text-white/75 mb-2">
                 Tell us about your child and we'll get you started.
+              </p>
+              <p className="text-white/60 text-sm mb-8">
+                Teacher Alex follows the CAPS curriculum.
               </p>
               <form onSubmit={submit} className="space-y-4">
                 <label className="block">
