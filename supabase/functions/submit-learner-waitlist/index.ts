@@ -68,7 +68,9 @@ Deno.serve(async (req) => {
       grade: parsed.data.grade,
       curriculum: parsed.data.curriculum,
     });
-    if (error) return fail(400); // includes duplicate number
+    // Reopening Teacher Alex with an existing number must not block access.
+    // Do not reveal stored details or overwrite an existing parent's record.
+    if (error && error.code !== '23505') return fail(400);
 
     return new Response(JSON.stringify({ ok: true }), {
       headers: { ...corsHeaders, 'Content-Type': 'application/json' },
