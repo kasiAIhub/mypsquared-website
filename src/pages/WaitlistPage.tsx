@@ -23,7 +23,7 @@ export default function WaitlistPage() {
   const submit = async (e: React.FormEvent) => {
     e.preventDefault();
     setStatus("sending");
-    const { error } = await supabase.functions.invoke("submit-learner-waitlist", { body: { ...form, curriculum: "CAPS" } });
+    const { error } = await supabase.functions.invoke("submit-learner-waitlist", { body: { ...form, curriculum: "Not sure" } });
     setStatus(error ? "error" : "done");
   };
 
@@ -32,17 +32,23 @@ export default function WaitlistPage() {
       <Navbar />
       <main className="bg-kasi-dark min-h-screen pt-28 pb-20 px-6 text-white">
         <div className="max-w-lg mx-auto">
-          <p className="uppercase font-bold mb-3 text-[#10b981] text-xs tracking-[0.18em]">Teacher Alex</p>
+          <p className="uppercase font-bold mb-3 text-[#10b981] text-xs tracking-[0.18em]">Learner Blueprint</p>
           {status === "done" ? (
             <div className="rounded-lg border border-[#10b981]/40 bg-[#10b981]/10 p-8">
-              <h1 className="text-3xl font-bold mb-3">Thank you!</h1>
-              <p className="text-white/80 mb-6">Teacher Alex's Term 4 practice is ready for {form.grade}. Set up your child's private parent and learner links next. No account or password needed.</p>
-              <a
-                href="https://alex.mypsquared.com/?setup=1"
-                className="block w-full text-center rounded-md bg-[#10b981] hover:bg-[#0ea371] font-semibold py-4 text-lg text-white"
-              >
-                Set up Teacher Alex →
-              </a>
+              <h1 className="text-3xl font-bold mb-3">{form.grade === "Grade 4" ? "Thank you!" : "Thank you, you're on the list!"}</h1>
+              {form.grade === "Grade 4" ? (
+                <>
+                  <p className="text-white/80 mb-6">Teacher Alex, your child's exam preparation buddy, is ready for Grade 4. Start now:</p>
+                  <a
+                    href="https://alex.mypsquared.com"
+                    className="block w-full text-center rounded-md bg-[#10b981] hover:bg-[#0ea371] font-semibold py-4 text-lg text-white"
+                  >
+                    Start Teacher Alex →
+                  </a>
+                </>
+              ) : (
+                <p className="text-white/80">We're building {form.grade} now. We'll message you on WhatsApp when it's ready.</p>
+              )}
             </div>
           ) : (
             <>
